@@ -56,4 +56,8 @@ Password:
 'admin:login' logged in successfully
 Context 'localhost:8080' updated
 ```
-
+## Create an Application from CLI
+```
+$ argocd app create nginx --repo https://github.com/picar//ubernetes.git --path argocd/apps/nginx --dest-server https://kubernetes.default.svc --dest-namespace default
+application 'nginx' created
+```
